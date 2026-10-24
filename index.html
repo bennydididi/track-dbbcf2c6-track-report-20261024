@@ -1,0 +1,637 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>播客发布素材助手-68分 · 完整证据包</title><style>body{margin:0;font-family:-apple-system,"PingFang SC","Noto Sans SC",sans-serif;background:#0f1419;color:#e7ecf3;line-height:1.65}
+.top{position:sticky;top:0;background:#0f1419ee;border-bottom:1px solid #2a3548;padding:8px 16px}.top a{color:#9aa8bc;margin-right:10px;font-size:13px;text-decoration:none}
+.wrap{max-width:980px;margin:0 auto;padding:20px}a{color:#5b9fd4}table{border-collapse:collapse;display:block;overflow-x:auto}td,th{border:1px solid #2a3548;padding:4px 8px}
+pre,code{background:#121a26;white-space:pre-wrap}h2.sec{border-top:2px solid #5b9fd4;padding-top:16px;margin-top:40px}</style></head><body><div class="top"><a href="#report">完整报告</a><a href="#sop-criteria">sop-criteria.md</a><a href="#sop-v3">sop-v3.md</a><a href="#files">证据文件</a></div><div class="wrap"><section id="report"><h2 class="sec">完整报告</h2><p>这个产品帮助【已有文字稿的独立播客主和小型制作工作室】，在【每集剪完准备发布】时，解决【整理节目简介、章节、标题和多平台发布文案耗时、反复改格式的问题】。</p>
+<h1 id="seo">播客发布素材助手：需求成立，独立收费待验证，暂不优先 SEO</h1>
+<p>调研日期：2026-10-24。以下结论仅针对“已有文字稿 → 单集发布素材包”。</p>
+<h2 id="_1">一、首屏决策</h2>
+<h3 id="_2">钉死的研究对象</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>本次固定范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>谁</td>
+<td>已定期发布、有可用文字稿的独立播客主；兼顾小型制作工作室，暂不承接要求复杂的媒体机构</td>
+</tr>
+<tr>
+<td>输入</td>
+<td>粘贴文字稿、TXT 或 SRT；可补栏目语气、嘉宾姓名和已确认的资源链接</td>
+</tr>
+<tr>
+<td>输出</td>
+<td>单集节目简介（show notes，含摘要、要点、资源列表）、章节标题、候选标题、社媒发布文案；纯文本/Markdown/HTML 导出</td>
+</tr>
+<tr>
+<td>唯一任务</td>
+<td>把<strong>已完成的文字稿</strong>整理成一集能审阅后发布的文字素材包</td>
+</tr>
+<tr>
+<td>交付边界</td>
+<td>只有带时间码的输入才输出可核对的章节时间戳；普通 TXT 只给章节顺序。链接只使用输入中已确认的地址，不猜链接</td>
+</tr>
+<tr>
+<td>远程成交</td>
+<td>浏览器收稿、生成、导出即可完成交付；符合中国小团队做出海 SaaS 的范围</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">三维决策与下一步</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>判断</th>
+<th>决定性依据与限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>有无相关需求</td>
+<td><strong>有；当前小切口证据中等</strong></td>
+<td>主播明确使用“Descript 文字稿 → Gemini 简介”；说明任务存在，也说明通用 AI 已能承接。<a href="https://www.reddit.com/r/podcasting/comments/1wtmxzu/tools_processes_youve_found_helpful/">现用流程原帖</a></td>
+</tr>
+<tr>
+<td>切口能否独立收费</td>
+<td><strong>待验证，尚未通过同切口 PMF 门槛</strong></td>
+<td>Podnotes 有文字稿预览和付费入口，AfterCast 接收文字稿但仍标早期开放；已付费客户、收入及续费证据<strong>未找到</strong>。<a href="https://podnotes.org/">Podnotes</a>、<a href="https://www.aftercast.io/">AfterCast</a></td>
+</tr>
+<tr>
+<td>是否优先靠 SEO</td>
+<td><strong>暂不优先；仅保留英语小规模试验</strong></td>
+<td>US 两个生成器词各返回月搜 10；月搜 480 的宽词以教程为主。免费直接替代品存在，原始 SERP 全部不足十条，另有数据缺失。<a href="https://api.pxany.com/v1/keyword-volumes">搜索量供应商</a>、<a href="https://www.google.com/search?q=podcast+show+notes&amp;gl=us&amp;hl=en">宽词搜索入口</a>、<a href="https://sotto.to/tools/podcast-show-notes-generator/">免费直接工具</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>当前建议：留在验证池，不进入长期 SEO 建站投入。</strong> 先用真实文字稿验证：用户是否愿为“保留栏目语气、检查来源、一次导出多种格式”另付钱。现有公开证据不足以证明所有免费方案已让用户满意，也不足以证明当前切口已有稳定付费市场。</p>
+<p><strong>会改变决定的未知：</strong> 有稿用户是否仍每集反复改文案，并愿意为减少修改付费；如果只需要一版摘要，免费工具和现用 Gemini 流程已经构成强替代。<a href="https://www.reddit.com/r/podcasting/comments/1wtmxzu/tools_processes_youve_found_helpful/">现用流程</a>、<a href="https://www.podcastools.com/ai-show-notes-writer">免费简介工具</a></p>
+<p><strong>下一步验证（实验设定，尚未执行）：</strong> 招募已有稿且仍有修改负担的用户，展示同一份稿在本工具、免费工具、现用 AI 流程中的输出与修改时间；先收单集小额费用，再观察下一集使用。首付、复用、续费分别验收，见第五节。</p>
+<h3 id="_4">专员原分逐项核实</h3>
+<p>原分来自用户指定的初步报告与第四批原报告；两份报告的公开 HTTPS 链接<strong>未找到</strong>。以下为研究判断，均为 5 分制；综合分放附录。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">专员原分</th>
+<th style="text-align: right;">核实后分</th>
+<th>关键依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①需求真实</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td>有直接有稿流程，但缺“该流程仍痛苦”的近期独立样本；原热帖主要是转写或发布操作，不能全算本切口。<a href="https://www.reddit.com/r/podcasting/comments/1wtmxzu/tools_processes_youve_found_helpful/">有稿用户</a>、<a href="https://www.reddit.com/r/podcasting/comments/1v9txj6/transcribing_episodes_is_literally_killing_my/">转写热帖</a></td>
+</tr>
+<tr>
+<td>②付费意愿</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td>同切口有标价/试用，实际付费与留存<strong>未找到</strong>；整套音视频工具收费不为当前小功能加分。<a href="https://podnotes.org/">Podnotes</a>、<a href="https://www.aftercast.io/">AfterCast</a></td>
+</tr>
+<tr>
+<td>③好服务</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td>用户不一定专业，但语气、链接与格式需要审阅；技术类主播追求有上下文的深链接，不能假定“要求不高”。<a href="https://www.reddit.com/r/podcasting/comments/1es8ljo/whats_your_workflow_for_generating_good_show_notes/">具体痛点</a></td>
+</tr>
+<tr>
+<td>④小团队做得动</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"><strong>5</strong></td>
+<td>文本进、文本出可实现；Sotto 展示浏览器内处理及 Markdown 导出。评分为范围判断，未包含自动转写、分发集成。<a href="https://sotto.to/tools/podcast-show-notes-generator/">同类形态</a></td>
+</tr>
+<tr>
+<td>⑤形态简单</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td>表单与文字导出成立；模板、来源核查和跨格式预览增加少量复杂度。<a href="https://www.podcastools.com/ai-show-notes-writer">免费直接表单</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">二、判断依据：任务存在，但痛点和付费要拆开</h2>
+<h3 id="_6">用户原声与反证</h3>
+<p>日期、赞/评论数来自专员的 Arctic Shift 缓存；本轮打开原帖核正文，页面相对时间不用于倒推日期。热度为<strong>缓存值</strong>，不是当前值。</p>
+<table>
+<thead>
+<tr>
+<th>用户、日期、热度</th>
+<th>原话与现用工具</th>
+<th>支持什么／不能证明什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>独立访谈主播；2026-09-29；1 赞/7 评论</td>
+<td>“Google Gemini - Generating show notes from Descript transcripts”。<a href="https://www.reddit.com/r/podcasting/comments/1wtmxzu/tools_processes_youve_found_helpful/">原帖</a></td>
+<td><strong>与本次输入输出完全对口</strong>。已在做此任务；未说简介生成不满意，也未说为简介另付费。Descript/Gemini 的付费状态未找到</td>
+</tr>
+<tr>
+<td>小型播客主；2026-06-09；5/7</td>
+<td>“writing the show notes, coming up with a title and description”；问工具、助理或模板。后续更强调剪辑片段。<a href="https://www.reddit.com/r/podcasting/comments/1u0yrdw/">原帖</a></td>
+<td>支持发布前写作负担；未确认已有稿。不能把片段剪辑的抱怨和预算算进本任务</td>
+</tr>
+<tr>
+<td>技术类长访谈主播；2024-08-14；热度未找到</td>
+<td>“the whole process is enormously time-consuming”；想要有上下文、可跳转的简介。回复指出 RSS 描述换行及链接问题。<a href="https://www.reddit.com/r/podcasting/comments/1es8ljo/whats_your_workflow_for_generating_good_show_notes/">原帖</a></td>
+<td>支持“摘要之外还要链接、格式”的缺口。超过近半年，不计近期频次；未找到独立软件付款自述</td>
+</tr>
+<tr>
+<td>发布流程调研者；2026-09-30；16/55</td>
+<td>主帖自称调研；评论提到到各门户复制文案、检查发布状态。<a href="https://www.reddit.com/r/podcasting/comments/1wu6rv3/podcasters_who_publish_regularly_what_actually/">原帖及评论</a></td>
+<td>评论支持发布工作重复，主帖不是买家求购。<strong>复制/调度/上传不属于本工具交付</strong>，不据此承诺解决整个发布流程</td>
+</tr>
+<tr>
+<td>文字稿清理中的主播；2026-07-29；25/54</td>
+<td>抱怨说话人被合并、清理转写耗时。<a href="https://www.reddit.com/r/podcasting/comments/1v9txj6/transcribing_episodes_is_literally_killing_my/">原帖</a></td>
+<td><strong>排除加分</strong>：缺的是好文字稿，本工具从已有可用稿开始</td>
+</tr>
+<tr>
+<td>刚开播的用户；2026-08-30；12/26</td>
+<td>希望把完整转写放进简介，要求尽量免费。<a href="https://www.reddit.com/r/podcasting/comments/1w22fjl/recommendations_for_podcast_transcriptions/">原帖</a></td>
+<td><strong>排除加分</strong>：音频转文字需求，并非文字稿生成发布包</td>
+</tr>
+</tbody>
+</table>
+<p>另有 2026-09-26“简介太像垃圾营销文案”帖，缓存为 17/16，内容称已把文字稿交给 AI、最终回到自己写；本轮公开页两种地址均未取到正文，因此只留作访谈线索，<strong>不作为已核实需求或差评加分</strong>。<a href="https://www.reddit.com/r/podcasting/comments/1wqmdgc/">待复核原帖</a></p>
+<p><strong>不能把“有提及”当成“有痛点”。</strong> 重算专员缓存得到：r/podcasting 2,925 帖、r/Podcasters 661 帖；简介/单集描述正则命中 64 帖，Castmagic 命中 2 帖，去重并集 65 帖。它们包含宣传、教程、转写、无痛现用流程，<strong>不是 64 个有稿付费需求</strong>。本轮 Arctic Shift 因 DNS 失败，未重拉半年全量；使用的是 2026-04-23 至 10-23 的历史缓存。<a href="https://www.reddit.com/r/podcasting/">版块一</a>、<a href="https://www.reddit.com/r/Podcasters/">版块二</a>、<a href="https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=podcasting&amp;after=2026-04-23&amp;limit=100">原采集接口复查入口</a></p>
+<h2 id="_7">三、现有解法与独立收费缺口</h2>
+<h3 id="_8">直接竞品：供给已存在，收入验证仍缺</h3>
+<p>以下只比较能直接接收已有文字稿的解法。官网功能与价格是卖方陈述；本轮未完成登录后的生成质量、结账与续费测试。</p>
+<table>
+<thead>
+<tr>
+<th>解法</th>
+<th>官网可核实内容</th>
+<th>收费/PMF 核实与切入含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sotto 免费生成器</td>
+<td>文字稿/提纲 → 摘要、要点、章节、引用、社媒和邮件文案；规则提取、浏览器处理、Markdown 导出。<a href="https://sotto.to/tools/podcast-show-notes-generator/">工具页</a></td>
+<td><strong>免费</strong>；页眉的 $49 是其 Mac 转写产品，不能当成本生成器收费。真正生成质量、活跃用户及付费客户未找到</td>
+</tr>
+<tr>
+<td>Podcastools</td>
+<td>粘贴文字稿、选风格和要点数量；免费、无需登录；明确不补链接与时间戳。<a href="https://www.podcastools.com/ai-show-notes-writer">工具页</a></td>
+<td>证明基本摘要供给充分；完整素材包、来源校验有可试缺口。付费客户数、收入、流量、融资未找到</td>
+</tr>
+<tr>
+<td>Podnotes</td>
+<td>文字稿免费预览；导出、历史与完整包放在升级路径；Starter 同时显示 $12.99 与 $9.99/mo，两价适用账期/优惠未核实。<a href="https://podnotes.org/#pricing">官网定价区</a></td>
+<td>标价并不证明成交；套餐同时计音频分钟，音频流程还写“启用后可用”，单纯文字稿付费 PMF <strong>未找到</strong>。客户数、收入、续费、独立流量、融资未找到</td>
+</tr>
+<tr>
+<td>AfterCast</td>
+<td>粘贴/上传文字稿，输出简介、博客、邮件和社媒，强调栏目语气；标早期开放、7 天试用。<a href="https://www.aftercast.io/">官网</a></td>
+<td>仅检索缓存可读，直接打开返回 402。可核实付费价、付费客户、收入、续费、独立流量、融资<strong>未找到</strong>；不能把示例人物算客户</td>
+</tr>
+<tr>
+<td>用户现用 Gemini 流程</td>
+<td>已有 Descript 文字稿，再生成简介。<a href="https://www.reddit.com/r/podcasting/comments/1wtmxzu/tools_processes_youve_found_helpful/">用户原帖</a></td>
+<td>对口的实际使用证据，也是低切换动力的反证；是否愿为模板/导出再付钱未找到</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小团队可试的缝隙是“少改、可核对、直接粘贴”，不是再做一个摘要按钮。</strong> 第一版可保存栏目范文与专名词表，让每段要点回指输入位置；带时间码时保留引用，资源链接必须人工提供或确认；同时预览纯文本与 HTML。格式/深链接痛点有用户证据，Podcastools 明确不提供链接与时间戳；但 Sotto 已覆盖多种文案，所以“多输出”本身不足以形成差异。<a href="https://www.reddit.com/r/podcasting/comments/1es8ljo/whats_your_workflow_for_generating_good_show_notes/">用户格式问题</a>、<a href="https://www.podcastools.com/ai-show-notes-writer">Podcastools 边界</a>、<a href="https://sotto.to/tools/podcast-show-notes-generator/">Sotto 覆盖范围</a></p>
+<p><strong>尚无充分止损证据，也没有扩建依据。</strong> 没有证明用户普遍满意免费方案；同样没有证明他们愿为上面的差异付钱。专业工作室可能提出更严格审校要求，因此“好服务”下调；只保留文字生成和导出，技术范围仍适合小团队。</p>
+<p><strong>AI 越强，交付会更好，但付费理由可能变弱。</strong> 已有通用 AI 流程说明“生成能力”本身容易被替代；要验证的产品价值是固定栏目规范、事实回查和省掉格式修改，不能声称通用 AI 无法记模板。<a href="https://www.reddit.com/r/podcasting/comments/1wtmxzu/tools_processes_youve_found_helpful/">真实流程</a></p>
+<h2 id="_9">四、能承接的搜索词与竞争判断</h2>
+<h3 id="_10">同一发布任务，合并判断，不按国家或子功能累加市场</h3>
+<p>搜索量来自用户提供的 2026-10-24 PXAny 快照；单位为<strong>该国 Google 月搜索量估计</strong>，不是独立买家数。原始搜索量响应未保存，本轮 DNS 失败无法重测；脚本把 <code>avgMonthlySearches=null</code> 映射成 0，故旧“供应商返回0”存在空值误归风险。正数只沿用原记录，不合并近义词推算人数。<a href="https://api.pxany.com/v1/keyword-volumes">搜索量接口</a></p>
+<table>
+<thead>
+<tr>
+<th>同一任务内的搜索表达</th>
+<th style="text-align: right;">US</th>
+<th style="text-align: right;">UK</th>
+<th style="text-align: right;">CA</th>
+<th style="text-align: right;">AU</th>
+<th>页面是否能直接承接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>podcast show notes generator</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><strong>条件承接</strong>：有稿用户可用；不能满足只拿音频来的人</td>
+</tr>
+<tr>
+<td>show notes generator</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td>条件承接；与上行近义，不能直接相加</td>
+</tr>
+<tr>
+<td>podcast show notes</td>
+<td style="text-align: right;">480</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">30</td>
+<td>信息/教程/节目导航混合；工具页不能完整承接，不计成购买量</td>
+</tr>
+<tr>
+<td>podcast episode title generator</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td>输入可能只有主题；本方案必须有文字稿，不全算直接目标流量</td>
+</tr>
+<tr>
+<td>transcript to show notes</td>
+<td style="text-align: right;">0†</td>
+<td style="text-align: right;">0†</td>
+<td style="text-align: right;">0†</td>
+<td style="text-align: right;">0†</td>
+<td>任务精确；US 原样本严重偏题，不能用来判断竞品强弱</td>
+</tr>
+<tr>
+<td>show notes from transcript</td>
+<td style="text-align: right;">0†</td>
+<td style="text-align: right;">0†</td>
+<td style="text-align: right;">0†</td>
+<td style="text-align: right;">0†</td>
+<td>任务精确；仍做了核心词 SERP，低量不等于需求不存在</td>
+</tr>
+</tbody>
+</table>
+<p>表内来源：<a href="https://api.pxany.com/v1/keyword-volumes">PXAny 月搜快照接口</a>；†＝旧记录标“供应商返回0”，真0与空值归0无法重建。完整逐词原值、状态、国家、任务组和复查链接见证据包 <code>keyword-audit.csv</code>；<strong>不引用转写、剪辑、内容搜索的量</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>需求组</th>
+<th>实际 SERP 样本与直接对手</th>
+<th>对 SEO 的含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>简介/发布包生成</td>
+<td>US <code>podcast show notes generator</code> 样本 9 条：前部含 ShowNotesGenerator、Swell、Podsqueeze、Recast，另有 Riverside、Descript；核过的入口主要接音视频。US <code>show notes generator</code> 样本 9 条，另出现 Sotto 和 LumiClip。<a href="https://www.google.com/search?q=podcast+show+notes+generator&amp;gl=us&amp;hl=en">词一</a>、<a href="https://www.google.com/search?q=show+notes+generator&amp;gl=us&amp;hl=en">词二</a>、<a href="https://shownotesgenerator.com/">音视频入口例</a>、<a href="https://sotto.to/tools/podcast-show-notes-generator/">文字稿入口</a></td>
+<td>有成熟供给是需求信号；可比小站也存在。仅“省转写费”无法覆盖所有搜索者；免费入口使商业转化更难验证</td>
+</tr>
+<tr>
+<td>简介写法/概念</td>
+<td>US <code>podcast show notes</code> 样本 8 条，多为教程、行业内容与 Reddit；DE <code>Podcast Shownotes</code> 返回 70，也以解释/写法为主。<a href="https://www.google.com/search?q=podcast+show+notes&amp;gl=us&amp;hl=en">US</a>、<a href="https://www.google.com/search?q=Podcast+Shownotes&amp;gl=de&amp;hl=de">DE</a></td>
+<td>可写教学入口并嵌工具，不能用这些量代替付费生成器流量</td>
+</tr>
+<tr>
+<td>单集标题/描述</td>
+<td>US 标题词样本 9 条，含免费标题工具；描述词同样混入主题输入型产品。<a href="https://www.google.com/search?q=podcast+episode+title+generator&amp;gl=us&amp;hl=en">标题 SERP</a>、<a href="https://www.google.com/search?q=episode+description+generator&amp;gl=us&amp;hl=en">描述 SERP</a></td>
+<td>标题、描述属于素材包组成部分；另开大量独立页面会重复覆盖意图</td>
+</tr>
+<tr>
+<td>章节/社媒文案</td>
+<td>US 章节词样本 9 条，含整套音视频工具；<code>podcast chapters from transcript</code> 为 8 条。社媒词与内容再利用工具混合。<a href="https://www.google.com/search?q=podcast+chapter+generator&amp;gl=us&amp;hl=en">章节</a>、<a href="https://www.google.com/search?q=podcast+chapters+from+transcript&amp;gl=us&amp;hl=en">有稿章节</a></td>
+<td>仅带时间码的稿才能交付可信时间戳；不得把自动转写、视频切片或分发需求算进来</td>
+</tr>
+</tbody>
+</table>
+<p>排名来自所给第三方国家 Google 快照，不是本轮独立实时排名保证。<strong>已做的 105 组全部不足十条：87 组为 9 条、17 组为 8 条、1 组为 7 条</strong>；未逐页实测所有结果功能，故不给“完整前十竞争弱”的结论。<a href="https://api.pxany.com/v1/serp">SERP 供应商入口</a></p>
+<p><strong>国家优先级：只保留英语验证入口。</strong> 德语有相关解释性需求，荷语宽词返回 20，但未发现足以优先布局的正数工具词；西、意多数旧0，法、日、韩大量未返回。翻译质量和当地说法仍需母语核实，不能据此判定这些市场没人需要。<a href="https://www.google.com/search?q=Shownotes+Generator&amp;gl=de&amp;hl=de">DE 复查</a>、<a href="https://www.google.com/search?q=podcast+shownotes&amp;gl=nl&amp;hl=nl">NL 复查</a>、<a href="https://api.pxany.com/v1/keyword-volumes">数据接口</a></p>
+<p>原样本中，US <code>transcript to show notes</code> 出现词典、展会等偏题结果，FR 对应转换词出现词典/服饰页，JP 一个文字稿转简介词出现政府站点；已从竞争推断中排除。补充网页搜索可找到相关日法工作流文章，说明偏题样本不能解释成需求不存在；补搜不冒充当地 Google 完整前十。<a href="https://memolith.me/blog/podcast-transcription-shownotes">日语工作流</a>、<a href="https://sozai.app/fr/podcast-episode-into-show-notes/">法语工作流</a></p>
+<h2 id="_11">五、最小验证与停止条件</h2>
+<p>以下数字均为<strong>本次建议的实验规则，不是已发生结果或行业基准</strong>。现阶段只做收稿、生成、审阅和导出，不建设转写/剪辑/自动发布系统。</p>
+<table>
+<thead>
+<tr>
+<th>验证</th>
+<th>动作与建议门槛</th>
+<th>明确不能替代的指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首付</td>
+<td>找 20 位已有稿、仍需修改简介的合格用户；给同稿对比，试收 <strong>$3/集</strong>。至少 3 位真实购买并用于发布，才继续产品化</td>
+<td>填邮箱、夸赞、免费生成、购买整套转写软件，都不算本切口首付</td>
+</tr>
+<tr>
+<td>复用</td>
+<td>首付者下一集发布时，至少 2 位再次导入<strong>新稿</strong>并实际导出；与其旧流程比，记录修改用时和关键错误</td>
+<td>同一集反复点生成、套餐内再次使用不算再次付款；双周/月更用户按实际更新周期等候</td>
+</tr>
+<tr>
+<td>再购/续费</td>
+<td>若按集收费，看下一集是否产生第二笔实付；如试 <strong>$9/月、4 集</strong>，要等首个续订账期，看真实续扣、退款与取消</td>
+<td>月内第二次使用只算复用，不算续费；续订周期前一律写“未到期”，不能提前宣称留存</td>
+</tr>
+<tr>
+<td>SEO</td>
+<td>首付有信号后，只做一个英语工具页及同任务教程；观察 8 周收录、精确意图曝光、访问→首付，先记录基线</td>
+<td>排名、曝光、访问都不能代替付费；未收录时不能把无访问解释成无需求</td>
+</tr>
+</tbody>
+</table>
+<p><strong>停止/调整条件：</strong> 完成 20 位合格用户同稿演示后不足 3 位首付，或付费者一致认为免费方案/现用 AI 已够用，停止当前独立收费假设；若有人首付但下一集不再用，先查一次性尝鲜与输出质量，暂缓订阅。数字只用于早期筛查，小样本通过也不代表 PMF 已成立。</p>
+<p><strong>质量与收支：</strong> 要点、专名、链接、时间戳应能回查输入；无时间码就不给虚构时间。逐单记录模型、支付、退款、客服与获客成本，只有净收入能覆盖这些可变成本才扩量。当前单集推理成本、支付费率、获客成本和毛利实测均<strong>未找到</strong>；不沿用原报告“$9/月不限集”的未验证定价。</p>
+<h2 id="a">附录 A：综合评分与门槛</h2>
+<p>综合评分 <strong>68/100</strong>，计算为 <code>(3+2+3+5+4)÷25×100</code>；原分 <strong>84/100</strong>（原 21/25）。这是对初评五项的等权复核，不新增一套打分，也不包含独立 SEO 可行性分。</p>
+<p><strong>②付费意愿 2&lt;3，同切口 PMF 未证明，因此不推荐直接立项扩建。</strong> 68 分不能覆盖这个门槛；允许继续做低成本付款验证。评分依据见首屏逐项表。<a href="https://podnotes.org/">同切口标价与限制</a>、<a href="https://sotto.to/tools/podcast-show-notes-generator/">免费直接替代</a></p>
+<p>相邻机会只列出、不贡献本评分/搜索量/付费证明：音频或播客链接转文字；播客内容搜索；音视频剪辑与短视频渲染；跨平台自动上传/调度；文字生成音频播客。原报告引用的 Castmagic、Descript 整套产品收费，只用于纠正原初评证据归属，不计为“已有稿→发布包”的独立付费验证。<a href="https://www.castmagic.io/pricing">原对标官网</a></p>
+<h2 id="b">附录 B：国家词表与搜索量状态审计</h2>
+<p>下表是全部已提供记录的国家汇总；数字为<strong>市场×词条数</strong>，不是搜索次数。状态沿用原快照；旧0均加空值归0警示。核心词无论月搜多少均已查 SERP，外围词没有单市场 &gt;200 的记录，按 SOP 不补做。<a href="https://api.pxany.com/v1/keyword-volumes">搜索量接口</a>、<a href="https://api.pxany.com/v1/serp">SERP 接口</a></p>
+<table>
+<thead>
+<tr>
+<th>市场/语言</th>
+<th style="text-align: right;">查询词数</th>
+<th style="text-align: right;">返回正数</th>
+<th style="text-align: right;">供应商返回0†</th>
+<th style="text-align: right;">未返回</th>
+<th style="text-align: right;">未查询</th>
+<th style="text-align: right;">已查核心 SERP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US/en</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>UK/en</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>CA/en</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>AU/en</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>DE/de</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>FR/fr</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>ES/es</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>IT/it</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>NL/nl</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td>JP/ja</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>KR/ko</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>合计</td>
+<td style="text-align: right;"><strong>540</strong></td>
+<td style="text-align: right;"><strong>25</strong></td>
+<td style="text-align: right;"><strong>386</strong></td>
+<td style="text-align: right;"><strong>129</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+<td style="text-align: right;"><strong>105</strong></td>
+</tr>
+</tbody>
+</table>
+<p>†“供应商返回0”为旧文件状态名，<strong>不能保证供应商原始字段真是数值0</strong>；源码明确把缺失/空值映射为0。认证 API 的原响应未保留，本轮无法恢复。未返回＝查询后无对应词记录；未查询＝未发起/未完成量查询。相邻机会词的新增量查询为未查询，未纳入上表。</p>
+<h3 id="_12">核心词表摘录：不同语言表达同一任务</h3>
+<table>
+<thead>
+<tr>
+<th>语言</th>
+<th>简介/发布包</th>
+<th>精确文字稿输入表达</th>
+<th>相关量与缺口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>en</td>
+<td>podcast show notes generator；show notes generator</td>
+<td>transcript to show notes；show notes from transcript</td>
+<td>英语四市场生成器各 10；两个精确词旧0†；已查 SERP</td>
+</tr>
+<tr>
+<td>de</td>
+<td>Shownotes Generator；Podcast Shownotes</td>
+<td>Shownotes aus Transkript；Transkript in Shownotes umwandeln</td>
+<td>宽词 70；其他列词旧0†；已查 SERP</td>
+</tr>
+<tr>
+<td>fr</td>
+<td>générateur de notes d'épisode de podcast</td>
+<td>transformer une transcription en notes d'épisode</td>
+<td>列词均未返回；转换词 SERP 偏题</td>
+</tr>
+<tr>
+<td>es</td>
+<td>generador de notas de episodios de podcast</td>
+<td>convertir transcripción en notas de podcast</td>
+<td>列词旧0†；已查 SERP</td>
+</tr>
+<tr>
+<td>it</td>
+<td>generatore di note degli episodi podcast</td>
+<td>trasformare una trascrizione in note dell'episodio</td>
+<td>前词旧0†，后词未返回；已查 SERP</td>
+</tr>
+<tr>
+<td>nl</td>
+<td>podcast shownotes maken；shownotes genereren</td>
+<td>transcript omzetten naar shownotes；shownotes uit transcript</td>
+<td>列词旧0†；宽词 podcast shownotes 为 20；已查 SERP</td>
+</tr>
+<tr>
+<td>ja</td>
+<td>ポッドキャスト ショーノート 生成</td>
+<td>文字起こしからショーノート作成</td>
+<td>列词未返回；转换词 SERP 偏题</td>
+</tr>
+<tr>
+<td>ko</td>
+<td>팟캐스트 쇼노트 생성기</td>
+<td>팟캐스트 전사문으로 쇼노트 만들기</td>
+<td>列词未返回；已查 SERP</td>
+</tr>
+</tbody>
+</table>
+<p>词量来源同为 <a href="https://api.pxany.com/v1/keyword-volumes">PXAny</a>。完整词表为证据包中的 <code>kw/</code>、<code>keyword-audit.csv</code> 和 <code>serp.md</code>，保留全部 540 条状态、105 组样本、核心词标记及 Google 国家复查链接。没有把同义词、各组成输出、跨国记录直接相加估计买家规模。</p>
+<h3 id="_13">剔除与条件承接记录</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>音频转写、播客搜索、切片视频、自动分发</td>
+<td>相邻任务；不新增量、不采付费、不贡献竞争判断</td>
+</tr>
+<tr>
+<td>podcast show notes writer</td>
+<td>可能求人工代写；外围词，低量未查 SERP；不能当纯 SaaS 付费流量</td>
+</tr>
+<tr>
+<td>podcast show notes / Podcast Shownotes / podcast shownotes</td>
+<td>信息或导航混合；保留查询记录，不计为生成器购买量</td>
+</tr>
+<tr>
+<td>只有主题的标题/描述生成</td>
+<td>本产品要求文字稿，只能条件承接；不据其量估算完整发布包市场</td>
+</tr>
+<tr>
+<td>US 两个偏题词、FR 两个偏题词、JP 一个偏题词</td>
+<td>最终表标“异常/偏题样本”；不据它们下竞争弱结论</td>
+</tr>
+</tbody>
+</table>
+<h2 id="c">附录 C：域名、核查限制与用时</h2>
+<table>
+<thead>
+<tr>
+<th>域名观察</th>
+<th>原快照所见</th>
+<th>能说明什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lumiclip.ai</td>
+<td>注册日期记录 2026-04-18；US <code>show notes generator</code> 样本位置 8；域名 DR 记录 4。<a href="https://www.lumiclip.ai/podcast-show-notes-generator">页面</a>、<a href="https://rdap.org/domain/lumiclip.ai">RDAP 入口</a></td>
+<td>年轻域名出现在样本，值得继续核查；该页主要接媒体文件，且已宣传语气与多格式输出</td>
+</tr>
+<tr>
+<td>sotto.to</td>
+<td>注册日期记录 2025-12-05；同词位置 9；DR 记录 35。<a href="https://sotto.to/tools/podcast-show-notes-generator/">直接文字稿工具</a>、<a href="https://rdap.org/domain/sotto.to">RDAP 入口</a></td>
+<td>当前切口的年轻域名/免费工具线索；不能推导新站一定能排上去</td>
+</tr>
+<tr>
+<td>shownotesgenerator.com</td>
+<td>注册日期记录 2023-03-08；US 两个生成器词样本位置 1；DR 记录 30。<a href="https://shownotesgenerator.com/">页面</a>、<a href="https://rdap.org/domain/shownotesgenerator.com">RDAP 入口</a></td>
+<td>小站样本存在；页面明确提供免费音视频转写及简介，本次不拿其音频需求给小切口付费加分</td>
+</tr>
+</tbody>
+</table>
+<p>注册日期与 DR 仅沿用原快照，本轮 RDAP 公开入口未能打开，独立核验<strong>未找到</strong>；不作为 SEO 容易或难的评分依据。最终表按独立域名、注册日期重算年龄窗口，旧 <code>young3</code> 字段仅留作原始记录。</p>
+<p>核查边界：Arctic Shift 本轮一次 shell 请求 DNS 失败，网页接口也不可用，退回 <code>site:reddit.com</code> 搜索及逐页读取；未换 IP、未绕过限制。搜索量复查同样 DNS 失败。AfterCast 为搜索缓存证据；未取到的 Reddit 帖只列弱线索。竞品实际生成质量、付费客户、收入、续费与独立流量未找到；官网宣传的时间节省、客户规模未作本报告事实。</p>
+<p>最终判定以 <code>evidence/final-decisions.json</code> 为唯一表源，同步 <code>serp.json</code>、<code>serp.md</code> 与 <code>report.html</code>；原始 SERP 副本、关键词、缓存命中、请求错误、页面摘录、评分及 SOP 一并打包。报告公开网页链接：<strong>未找到</strong>；已生成本地 HTML，当前网络受限，未完成公开发布。</p>
+<p>用时：前置扩词约 <strong>3 分钟</strong>、SERP 采集约 <strong>57 分 47 秒</strong>，来自原任务 <code>timing.txt</code>；本轮深挖与成稿 <strong>12 分 26 秒</strong>，全流程墙钟约 <strong>73 分钟</strong>（含前置采集和阶段间隔），详见同包 <code>evidence/timing-audit.json</code>。时间为实际流程记录，不是人时或未来开发工期。</p></section><section id="sop-criteria"><h2 class="sec">sop-criteria.md</h2><p>【对齐需求发掘专员的筛选标准——这是本次调查的核心依据】
+其打分 5 项（各 1–5）：①需求真实 ②付费意愿 ③好服务（用户非专业、要求不高；不限 B 端，C 端也可以，B 端小老板只是加分；专业挑剔或出错要担大责任的扣分）④小团队做得动 ⑤形态简单（表单类）；①或②&lt;3 不推荐。原则：AI 时代赋能（AI 越强产品越好，用户不会因有 AI 就不用）；门槛：对标产品已验证 PMF——且 PMF 必须对得上<strong>当前切口</strong>，大品类有人付费不能直接证明这个小功能有人另付钱。
+初步报告须先钉死：谁、输入、输出、单一用户任务；相邻机会拆开，不混进同一条五项打分。</p>
+<p>你的任务是逐项核实/推翻它给的分数和证据，而不是另起一套标准：
+- 关卡1 核①：逐页打开原帖核对原话和日期（近半年优先），给出你核实后的分数。
+- 关卡2 核②+PMF：官网核实竞品价格、客户数、融资、流量；"有成熟对标产品在收钱"是通过信号，不是否决理由——但必须是当前切口的对标，不是相邻大品类。
+- 关卡3 核③④⑤+切入可行性：不要因为"已有竞品/低价竞品"就止损。只在以下情况止损：免费方案已足够好且用户满意、或头部产品价格已低到小团队无利可图、或差评里找不到任何可切入缺口、或研发/合规负担超出小团队。要明确写出小团队可切的缝隙及证据。
+- 关卡4 市场体量，关卡5 核"AI 时代赋能"是否成立。
+报告开头列一张表：5 项"专员原分 / 核实后分 / 关键证据"；首屏另给三维决策（需求／独立收费／SEO 优先级），总分可放附录。</p></section><section id="sop-v3"><h2 class="sec">sop-v3.md</h2><p>【入口铁律】新赛道必须先有需求发掘专员的初步报告与五项打分，再进入本 SOP 深挖。用户口头点题也先转需求发掘专员，禁止未经初步直接扩词/SERP/写报告。</p>
+<p>你是赛道深度调查员。需求来源报告：<strong>SRC</strong>。中文，精炼。每个数据附来源链接，查不到写"未找到"，严禁编造。
+核心原则：有竞品不是否决理由。竞品赚钱多说明市场被验证，做老二也可以。我们主打 SEO。
+团队在中国做出海：只做能远程成交的软件/SaaS 获客，不做必须本地履约的服务需求。</p>
+<p>【先钉死研究对象】报告开头必须固定：谁、输入是什么、输出是什么、本次只判断哪一个用户任务。
+- 相邻机会（相近但输入/输出不同）只列表，不贡献搜索量、付费证明或竞争评分。
+- 例：播客转文字 ≠ 已有文字稿→发布素材 ≠ 播客内容搜索，必须拆开。
+- 第一行一句话定位仍要写："这个产品帮助【什么人】，在【什么场景】下，解决【什么问题】。"标题用直白话，术语首次出现要解释。</p>
+<p>【第一步：核实赛道】确认需求真假（专员数据、原帖、竞品价格/客户数、Reddit Arctic Shift）。只有需求假或无人付费才停。用户原声要写清：什么用户、原话、抱怨的是哪一步、是否提过现用工具和付费。</p>
+<p>【第二步：调查关键词】
+1. <strong>按用户任务覆盖，不硬凑数量</strong>：先围绕已明确的用户任务找核心词、同义表达、具体场景词；确认相关后再扩市场。初筛可从几十个高相关词开始，不设「每种语言约 300」硬指标。
+2. 每个词都要能回答：搜这个词的人进入我们计划做的页面，能不能直接得到他想要的结果？不能 → 移到相邻机会或排除记录，不能因词里有同类行业词就硬套。
+3. 市场（只保留主要发达市场）：US、UK、CA、AU、DE、FR、ES、IT、NL、JP、KR。各国用当地语言查 Google 月搜索量。英语 en.txt 共用四英语市场；de/fr/es/it/nl/ja/ko 各自本地说法扩词。
+4. <strong>SERP 规则（2026-10-24 改）</strong>：
+   - <strong>核心需求词</strong>：无论月搜高低，都查实际搜索结果（确认意图、直接竞品、预期功能）。低量只影响 SEO 优先级，不能成为「不理解这个需求」的理由。
+   - <strong>外围扩展词</strong>：再用「该市场月搜 &gt; 200」控制调查成本；≤200 只记量。
+5. <strong>出海筛选（标配）</strong>：即使月搜&gt;200，若该词是「只有本地成交才能变现」的当地服务需求，也直接跳过 SERP，只记量并标注「本地服务跳过」。（保留找软件/系统/SaaS 的词。）
+6. <strong>搜索量记录</strong>：分清「返回正数 / 供应商返回 0 / 未返回 / 未查询」。没有查到数值，不能写成「未找到≤200」。</p>
+<p>【第三步：研究竞争格局】
+- <strong>按用户任务分组</strong>，再比较不同国家表现。同一任务的多种搜索表达合成一个需求组，不要「每个市场×关键词各写一套赛道结论」。
+- 用该国 Google 看前十；域名注册年龄保留为证据：<strong>近1年或近18个月≥2个、近18个月1个</strong> 仅标为观察线索（「样本中有年轻域名入榜，值得继续查」），<strong>不得直接升级为「新手友好／容易做」</strong>。还要看排名页满足什么需求、功能特点、有无可比小站、我们能否交付。DR 仅参考。样本不足完整前十时，必须写明样本条数，不得下满额结论。
+- 意图是否对口；该词头部/中小玩家与切入点。
+- 正文、serp.json、公开页必须读同一份<strong>最终判定表</strong>；旧标签可留在原始数据，但不得被后续汇总当最终结论。</p>
+<p>【第四步：投入产出与结论】
+- <strong>首屏三维决策</strong>（先于总分）：①有没有相关需求？②当前切口能否独立收费（待验证／已证明）？③适不适合优先靠 SEO 做站？
+- 总分满分 100 可留作内部筛选记录，放附录；五项评分里若未直接评 SEO 获客可行性，不要用总分冒充 SEO 优先级。
+- 验证指标必须分开：<strong>首付、复用、续费</strong>。月订阅看首付+使用、到续订周期再看续费；按次收费才看「第二单是否再买」。不要把套餐内再用当成再付。
+- 写清最小验证动作与停止条件；记录用时。</p>
+<p>【报告结构三层】
+1. 一分钟看懂：研究哪个需求、当前建议、最关键支持/反对理由、哪个未知会改决定、下一步验证。
+2. 判断依据：场景与问题 → 现有解法与痛点 → 需求证据与反证 → 能承接的词与直接竞品 → 最小验证与停止条件。每节先结论再少量证据；每条重要证据说明支持什么、不能证明什么。
+3. 可展开证据与方法：完整国家/词表、剔除词及原因、旧评分修正、域名核验、DNS/重试/计时、SOP 与原始文件。影响决策的限制（如某国数据缺失）须留在正文，细节日志可附录。</p>
+<p>【验收】看完首屏应能说清：谁要什么、我们交付什么、有什么证据、为什么值得或不值得继续、下一步验证什么。说不清就继续改；关键词数量和报告长度不算完成标准。</p>
+<p>serp.py：准备 kw 目录（en.txt/de.txt/…），然后
+  python3 /workspace/research/serp.py <kw目录> &lt;输出目录&gt;
+核心词清单可单独标记，脚本侧逐步支持「核心词无视 200 门槛」；在脚本未改完前，人工保证核心词必做 SERP。</p>
+<p>【交付】报告里只写 https 外链；不要写 /workspace 本机路径。证据文件打进同名 zip，附件发 zip，并附公开网页链接。每个核心结论要有可打开的证据入口。</p></section><section id="files"><h2 class="sec">证据文件（原始数据）</h2><ul><li><a href="kw/core.txt">kw/core.txt</a> (2 KB)</li><li><a href="kw/de.txt">kw/de.txt</a> (1 KB)</li><li><a href="kw/en.txt">kw/en.txt</a> (1 KB)</li><li><a href="kw/es.txt">kw/es.txt</a> (1 KB)</li><li><a href="kw/fr.txt">kw/fr.txt</a> (1 KB)</li><li><a href="kw/it.txt">kw/it.txt</a> (1 KB)</li><li><a href="kw/ja.txt">kw/ja.txt</a> (2 KB)</li><li><a href="kw/ko.txt">kw/ko.txt</a> (1 KB)</li><li><a href="kw/nl.txt">kw/nl.txt</a> (1 KB)</li><li><a href="report.md">report.md</a> (26 KB)</li><li><a href="serp.json">serp.json</a> (1013 KB)</li><li><a href="serp.md">serp.md</a> (303 KB)</li><li><a href="sop-criteria.md">sop-criteria.md</a> (1 KB)</li><li><a href="sop-v3.md">sop-v3.md</a> (5 KB)</li><li><a href="timing.txt">timing.txt</a> (0 KB)</li><li><a href="播客发布素材助手-68分.md">播客发布素材助手-68分.md</a> (26 KB)</li></ul></section></div></body></html>

@@ -1,0 +1,63 @@
+podcast show notes generator
+show notes generator
+podcast show notes
+episode description generator
+podcast chapter generator
+transcript to show notes
+show notes from transcript
+podcast episode title generator
+podcast episode description generator
+podcast chapters from transcript
+podcast social media posts from transcript
+podcast shownotes generator
+podcast shownotes
+Shownotes Generator
+Shownotes erstellen
+Podcast Episodenbeschreibung generieren
+Podcast Kapitelmarken generieren
+Transkript in Shownotes umwandeln
+Shownotes aus Transkript
+Podcast Folgentitel generieren
+générateur de notes d'épisode de podcast
+notes d'épisode de podcast
+générateur de description d'épisode de podcast
+générateur de chapitres de podcast
+transformer une transcription en notes d'épisode
+notes d'épisode à partir d'une transcription
+générateur de titres d'épisodes de podcast
+generador de notas de episodios de podcast
+notas de episodios de podcast
+generador de descripciones de episodios de podcast
+generador de capítulos de podcast
+convertir transcripción en notas de podcast
+notas de podcast a partir de una transcripción
+generador de títulos de episodios de podcast
+generatore di note degli episodi podcast
+note degli episodi podcast
+generatore di descrizioni per episodi podcast
+generatore di capitoli per podcast
+trasformare una trascrizione in note dell'episodio
+note dell'episodio dalla trascrizione
+generatore di titoli per episodi podcast
+podcast shownotes maken
+shownotes genereren
+afleveringsbeschrijving genereren
+podcast hoofdstukken genereren
+transcript omzetten naar shownotes
+shownotes uit transcript
+podcast afleveringstitel genereren
+ポッドキャスト ショーノート 生成
+ポッドキャスト ショーノート
+ポッドキャスト エピソード説明文 生成
+ポッドキャスト 概要欄 自動生成
+ポッドキャスト チャプター 自動生成
+文字起こしからショーノート作成
+文字起こしからポッドキャストの概要欄を作成
+ポッドキャスト エピソードタイトル 生成
+팟캐스트 쇼노트 생성기
+팟캐스트 쇼노트
+팟캐스트 에피소드 설명 생성기
+팟캐스트 챕터 생성기
+팟캐스트 전사문으로 쇼노트 만들기
+팟캐스트 대본으로 쇼노트 작성
+팟캐스트 에피소드 제목 생성기
